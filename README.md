@@ -172,4 +172,49 @@ Problems to tackle:
 - Sensors should be added to the environment, and the data acquired should be processed.
 
 ## ELECTRICAL SYSTEM
+
+The six wheeled ackerman geometry is implemented for navigation. Message from phone via Bluetooth connection is received by the microcontroller, based on the condition the robot is moved. Currently the radius of turn is fixed, will be adjustable in future.
+**Power calculations :**
+
+- For DC motors, at load, peak current= 2.2A, continuous current= 600mA
+- At no load, peak current= 1.2A, continuous current= 200mA
+- Motor driver max current per channel is 3A (continuous), 5A (peak)
+- Servo motors will consume around 1.2A at stall condition.
+- With 6 DC motors and 4 servos, total current consumption comes around 18 A.
+- Power supplied is roughly { [ ( 6 x 2.2 A x 12 V) + [1.2 A x 5 v] ] = 164.4 W } **230 Watts for the drive system.**
+- Power consumed by other components:
+    - MCU: 8 - 9 W max and around 0.2 A current each.
+    - Other sensors, Lights and Communication systems consume less than 2 - 3 w and 0.4 – 0.5 A max.
+    - Lidar: 1.5 w and max 0.3 A. (in future we’ll be using LiDAR for terrain mapping)
+- Net power required is around 240 – 250 W with current drawn around 20-25 A max.
+- The buck converters come with adjustable output DC supply.
+- Right now we’re using SMPS(switched mode power supply) for power source that gives a wide range of output voltage and current.
+
+**Electrical flow process:**
+We used SMPS as power supply to power up the three motor drivers. 3 Motor drivers will control the 6 DC motors, each controlling 2 motors, having 3A permissible continuous current rating per port. Servos are powered using buck converter which converts high voltage from SMPS to 5V. Bluetooth module and IMU will be connected to the micro-controller. Thus the MC controls IMU, bluetooth module, and the four servo motors which are connected to the 2 front and 2 back wheels for controlling the steering. IMU is used to get the accelerometer and gyroscope measurements.
+
+## Observations:
+
+- For DC motors, **at load, peak current= 2.2A**, continuous current= 600mA
+- At no load, peak current= 1.2A, continuous current= 200mA
+- **L298N max current per channel is 2A** (peak) per port
+- So at load, the port in L298N at which the loaded motor is attached got burnt since it exceeded the rated current.
+- So we changed the motor driver to MDD3A whose port has current capacity 3A (continuous) and 5A (peak).
+
 ## REFERRENCES 
+- Previous Robofest submissions:
+    - [https://www.youtube.com/watch?v=lbI3N3IFIQc](https://www.youtube.com/watch?v=lbI3N3IFIQc)
+    - [https://www.youtube.com/watch?v=x54AGX9miN8](https://www.youtube.com/watch?v=x54AGX9miN8)
+    - [https://www.youtube.com/watch?v=6oWO_RJU9YY](https://www.youtube.com/watch?v=6oWO_RJU9YY)
+- International rover challenge
+    - [https://www.youtube.com/watch?v=few9ZminRlg&ab_channel=NovaRover](https://www.youtube.com/watch?v=few9ZminRlg&ab_channel=NovaRover)
+    
+    - [https://www.youtube.com/watch?v=1iWWmPoYnnA&ab_channel=NovaRover](https://www.youtube.com/watch?v=1iWWmPoYnnA&ab_channel=NovaRover)
+    - [https://www.youtube.com/watch?v=N7xY_O0PeXE&ab_channel=KoloNaukoweRobotykow](https://www.youtube.com/watch?v=N7xY_O0PeXE&ab_channel=KoloNaukoweRobotykow)
+    - [https://www.youtube.com/watch?v=rEn0aH8DRcM&ab_channel=ITURoverTeam](https://www.youtube.com/watch?v=rEn0aH8DRcM&ab_channel=ITURoverTeam)
+ - other
+    - [https://www.youtube.com/watch?v=tgAOEiIUJ5k&ab_channel=MarsRoverManipal](https://www.youtube.com/watch?v=tgAOEiIUJ5k&ab_channel=MarsRoverManipal)
+    - [https://www.youtube.com/watch?v=LI7Wsg5GcxQ&ab_channel=TeamAnveshak](https://www.youtube.com/watch?v=LI7Wsg5GcxQ&ab_channel=TeamAnveshak)
+    - [https://www.youtube.com/watch?v=NOR0gMlQF7k&ab_channel=TeamRoverXVITUniversity](https://www.youtube.com/watch?v=NOR0gMlQF7k&ab_channel=TeamRoverXVITUniversity)
+
+
