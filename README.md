@@ -71,7 +71,7 @@ An autonomous rover that can be used for unmanned space exploration missions use
     3. Attach 10cm(should be perpendicular to ground) and  15cm profiles to the trapezium part using fasteners
     4. Attach 6cm profile (on the side of M4 hole on 30cm profile) perpendicular to the rectangular body using corner bracket
 
-### Servo Attachment**:**
+### Servo Attachment:
 
 - Material Used:
     1. Servo Bracket(4)
@@ -81,7 +81,7 @@ An autonomous rover that can be used for unmanned space exploration missions use
     1. Attach Servo bracket to 16cm and 15cm profiles
     2. Place the Servo motor on Servo bracket
 
-### Steering Mech**:**
+### Steering Mech:
 
 - Material Used:
     1. Circular Servo Horn
