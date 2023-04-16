@@ -201,7 +201,7 @@ We used SMPS as power supply to power up the three motor drivers. 3 Motor driver
 - So at load, the port in L298N at which the loaded motor is attached got burnt since it exceeded the rated current.
 - So we changed the motor driver to MDD3A whose port has current capacity 3A (continuous) and 5A (peak).
 
-## REFERRENCES 
+## REFERENCES 
 - Previous Robofest submissions:
     - [https://www.youtube.com/watch?v=lbI3N3IFIQc](https://www.youtube.com/watch?v=lbI3N3IFIQc)
     - [https://www.youtube.com/watch?v=x54AGX9miN8](https://www.youtube.com/watch?v=x54AGX9miN8)
