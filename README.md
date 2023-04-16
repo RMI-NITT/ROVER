@@ -6,46 +6,11 @@ An autonomous rover that can be used for unmanned space exploration missions use
 ## HARDWARE LIST AND SPECS
 
 
-Components
-Quantity
-Model name
-Specifications
-Servo motors
-4
-Tower pro mg946r 
-Operating Voltage: 4.8-6.6 V
-Angle of rotation: 180 degree
-
-
-Wire Description
-Red – Positive
-Brown – Negative
-Orange – Signal
-
-
-current drawn (at idle)- 10mA
-Operating current drawn (at no load)-170mA
-Stall current drawn-1200mA
-Stall Torque @ 4.8V (Kg-Cm)-10.5
-Stall Torque @6V-13kg/cm
-Operating Speed @4.8V-0.20sec/60°
-Operating Speed @6V-0.17sec/60º
-DC motors
-6
-12V 60 rpm Johnson motor A grade
-Operating Voltage(V): 12V
-Rated current : 1.2A
-Torque:32 to 120kgcm
-At load, peak current= 2.2A, continuous current= 600mA
-At no load, peak current= 1.2A, continuous current= 200mA
-38kgcm Holding Torque
-(rated)No-load current = 800 mA, Load current = upto 7.5 A(Max)
-Motor driver
-3
-Cytron 3Amp 4V-16V Dual Channel DC Motor Driver MDD3A
-Buttons for quick testing
-Operating Voltage: DC 4V to 16V
-Maximum permissible motor current to be drawn per port: 3A continuous, 5A peak(<5s)
+| Components | Quantity | Model name | Specifications |
+| ---------- | -------- | ---------- | -------------- |
+| Servo motors | 4 | Tower pro mg946r | Operating Voltage: 4.8-6.6 V, Angle of rotation: 180 degree, Wire Description: Red – Positive Brown – Negative Orange – Signal, current drawn (at idle)- 10mA, Operating current drawn (at no load)-170mA, Stall current drawn-1200mA, Stall Torque @ 4.8V (Kg-Cm)-10.5, Stall Torque @6V-13kg/cm, Operating Speed @4.8V-0.20sec/60°, Operating Speed @6V-0.17sec/60º|
+| DC motors | 6 | 12V 60 rpm Johnson motor A grade | Operating Voltage(V): 12V, Rated current : 1.2A, Torque:32 to 120kgcm, At load, peak current= 2.2A, continuous current= 600mA, At no load, peak current= 1.2A, continuous current= 200mA, 38kgcm Holding Torque, (rated)No-load current = 800 mA, Load current = upto 7.5 A(Max)
+| Motor driver | 3 | Cytron 3Amp 4V-16V Dual Channel DC Motor Driver MDD3A | Buttons for quick testing, Operating Voltage: DC 4V to 16V, Maximum permissible motor current to be drawn per port: 3A continuous, 5A peak(<5s)
 Buck-boost regulator to produce 5V output (200mA max).
 LEDs for motor output state.
 Reverse polarity protection.
