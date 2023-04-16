@@ -23,6 +23,109 @@ An autonomous rover that can be used for unmanned space exploration missions use
 
 
 ## MECHANICAL SYSTEM
+
+**Main Body Design:**
+
+- Material Used:
+    1. Aluminum T-Slot Profile (20*20)
+    2. Fasteners: bolts and nuts (M5, M3, M6)
+    3. Corner Brackets
+    4. Aluminum L Profile
+- Dimensions:
+    1. T-Slot Profile (Angular Cutting):
+        1. 30cm - 2 pcs
+        2. 15cm - 2 pcs
+        3. 16cm - 2 pcs
+        4. 6cm - 2 pcs
+        5. 5cm - 2 pcs
+        6. cut L Profile into flat plates
+    2. Drilling (Metal Drill Bit):
+        1. 2 holes on 16cm of M4
+        2. 1 holes on 5cm of M4
+        3. 1 holes on 30cm of M4
+        4. 2 holes on flat plates of M5
+- Assembly:
+    1. Attach 30cm and 15cm profiles using corner bracket and fasteners (Rectangular shape) 
+    2. Attach Flat plates on outer side joints, So that joints become immobile
+    3. Attach 5cm profiles perpendicular to the rectangular body using corner bracket and flat profile 
+    4. Attach 6cm profile (on the side of M4 hole on 30cm profile) perpendicular to the rectangular body using corner bracket
+    5. Attach 16cm profile at 45 degree to rectangular profile
+
+**Rocker-Bogie Design:**
+
+- Material Used:
+    1. Aluminum T-Slot Profile (20*20)
+    2. Fasteners: bolts and nuts (M5, M3, M6)
+    3. Acrylic Sheet (5mm)
+    4. Ball Bearing (5mm)
+    5. fasteners : Nuts and Bolts (M5 and M3)
+- Dimensions:
+    1. T-Slot Profile (Angular Cutting):
+        1. 25(10+15)cm - 2 pcs
+        2. 15cm - 2 pcs
+    2. laser Cutting:
+        1. Cut the acrylic sheet of the following design (Rectangular shape and trapezium)
+- Assembly:
+    1. Attach rectangular part to 15cm profile 
+    2. Attach trapezium part to rectangular part with ball bearing placed
+    3. Attach 10cm(should be perpendicular to ground) and  15cm profiles to the trapezium part using fasteners
+    4. Attach 6cm profile (on the side of M4 hole on 30cm profile) perpendicular to the rectangular body using corner bracket
+
+### Servo Attachment**:**
+
+- Material Used:
+    1. Servo Bracket(4)
+    2. Servo Motor
+    3. fasteners : Nuts and Bolts (M5 and M3)
+- Assembly:
+    1. Attach Servo bracket to 16cm and 15cm profiles
+    2. Place the Servo motor on Servo bracket
+
+### Steering Mech**:**
+
+- Material Used:
+    1. Circular Servo Horn
+    2. 3D printed Coupling
+    3. fasteners : Nuts and Bolts (M5 and M6)
+    4. Ball Bearing(M6)
+    5. Acrylic Sheet(5mm)
+    6. L profile 
+    7. Corner Brackets (small and large)
+    8. Motor Coupling
+    9. Motor Clamps
+    10. Wheels (12cm)
+- Dimension:
+    1. Laser Cutting:
+        1. Cut the of the following design
+    2. Angular Cutting:
+        1. Cut the L profile of 20cm
+        2. cut away 8*8cm plate on L profile
+    3. Drilling: 
+        1. Drill M3 size hole on L profile 
+    4. 3D Printing :
+        1. 3D print the Coupling design with 65% infill
+
+- Assembly:
+    1. Glue the servo horn the coupling
+    2. Attach the coupling to servo head using M3 Allen bolt
+    3. Place the M6 bolt and attach the other side of coupling
+    4. place ball bearings on the acrylic plate, insert the M6 bolt inside the bearing
+    5. Attach the plate to main body(to distribute  load on servo head) using corner  bracket (large)
+    6. Motor Holder:
+        1. Attach the motor coupling to rectangular acrylic sheet
+        2. Attach the L profile to rectangular acrylic sheet using corner bract (small)
+        3. Attach the motor clamp
+    7. Attach the motor holder to the M6 Bolt through motor coupling
+    8. Directly attach the motor clamp to the bodyty
+    9. place the motor in the motor holder
+    10. attach the wheels
+
+Important note:
+
+1. Rover Lacks lateral stability
+2. Too load acting in servo head
+3. Didn’t give any tolerance while cutting t-slots
+4. Used acrylic on high load acting areas
 ## COMMUNICATION SYSTEM
 ## SOFTWARE SYSTEM
 ## ELECTRICAL SYSTEM
